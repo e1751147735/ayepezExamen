@@ -9,7 +9,7 @@
             Padding="20"
             Spacing="15">
             <Label x:Name="lblUsuario"
-                   HorizontalOptions="End"/>
+                   Style="{StaticResource UsuarioGlobal}"/>
 
             <Label Text="RESUMEN"
                    FontSize="22"
@@ -35,7 +35,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nombre:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
                 <Label x:Name="lblNombre"
@@ -43,7 +43,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Apellido:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="1"
                        Grid.Column="0"/>
                 <Label x:Name="lblApellido"
@@ -51,7 +51,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Edad:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="2"
                        Grid.Column="0"/>
                 <Label x:Name="lblEdad"
@@ -59,7 +59,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Fecha de inicio:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="3"
                        Grid.Column="0"/>
                 <Label x:Name="lblFechaInicio"
@@ -67,7 +67,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Plan:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="4"
                        Grid.Column="0"/>
                 <Label x:Name="lblPlan"
@@ -75,7 +75,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Casillero:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="5"
                        Grid.Column="0"/>
                 <Label x:Name="lblCasillero"
@@ -83,7 +83,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Monto Inicial:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="6"
                        Grid.Column="0"/>
                 <Label x:Name="lblMontoInicial"
@@ -91,7 +91,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Pago mensual:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="7"
                        Grid.Column="0"/>
                 <Label x:Name="lblPagoMensual"
@@ -99,7 +99,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Pago Total:"
-                       FontAttributes="Bold"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="8"
                        Grid.Column="0"/>
                 <Label x:Name="lblPagoTotal"
@@ -114,10 +114,12 @@
                 </Grid.ColumnDefinitions>
                 <Button x:Name="btnExportar"
                         Text="Exportar TXT"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnExportar_Clicked"
                         Grid.Column="0"/>
                 <Button x:Name="btnCerrarSesion"
                         Text="Cerrar sesión"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnCerrarSesion_Clicked"
                         Grid.Column="1"/>
             </Grid>

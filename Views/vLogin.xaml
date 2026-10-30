@@ -31,7 +31,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Usuario:"
-                       VerticalOptions="Center"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
                 <Entry x:Name="txtUsuario"
@@ -40,7 +40,7 @@
                        Grid.Column="1"/>
 
                 <Label Text="Contraseña:"
-                       VerticalOptions="Center"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="1"
                        Grid.Column="0"/>
                 <Entry x:Name="txtContrasena"
@@ -51,11 +51,13 @@
 
                 <Button x:Name="btnIniciarSesion"
                         Text="Iniciar sesión"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnIniciarSesion_Clicked"
                         Grid.Row="2"
                         Grid.Column="0"/>
                 <Button x:Name="btnAcercaDe"
                         Text="Acerca de"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnAcercaDe_Clicked"
                         Grid.Row="2"
                         Grid.Column="1"/>

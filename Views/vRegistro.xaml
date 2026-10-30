@@ -9,7 +9,7 @@
             Padding="20"
             Spacing="15">
             <Label x:Name="lblUsuario"
-                   HorizontalOptions="End"/>
+                   Style="{StaticResource UsuarioGlobal}"/>
 
             <Label Text="REGISTRO"
                    TextColor="Blue"
@@ -29,12 +29,15 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Nombre"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
                 <Label Text="Apellido"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="0"
                        Grid.Column="1"/>
                 <Label Text="Edad"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="0"
                        Grid.Column="2"/>
 
@@ -69,7 +72,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Text="Fecha de inicio:"
-                       VerticalOptions="Center"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="0"
                        Grid.Column="0"/>
                 <DatePicker x:Name="dpFechaInicio"
@@ -78,7 +81,7 @@
                             Grid.Column="1"/>
 
                 <Label Text="Plan:"
-                       VerticalOptions="Center"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="1"
                        Grid.Column="0"/>
                 <Picker x:Name="pkPlan"
@@ -94,7 +97,7 @@
                 </Picker>
 
                 <Label Text="Casillero:"
-                       VerticalOptions="Center"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="2"
                        Grid.Column="0"/>
                 <Switch x:Name="swCasillero"
@@ -103,7 +106,7 @@
                         Grid.Column="1"/>
 
                 <Label Text="Monto Inicial:"
-                       VerticalOptions="Center"
+                       Style="{StaticResource EtiquetaGlobal}"
                        Grid.Row="3"
                        Grid.Column="0"/>
                 <Entry x:Name="txtMontoInicial"
@@ -114,6 +117,7 @@
                 <Button x:Name="btnCalcular"
                         Text="Calcular Pago mensual"
                         LineBreakMode="WordWrap"
+                        Style="{StaticResource BotonGlobal}"
                         Clicked="btnCalcular_Clicked"
                         Grid.Row="4"
                         Grid.Column="0"/>
@@ -126,6 +130,7 @@
 
             <Button x:Name="btnVerResumen"
                     Text="Ver Resumen"
+                    Style="{StaticResource BotonGlobal}"
                     Clicked="btnVerResumen_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
